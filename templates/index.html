@@ -1,0 +1,46 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>{% extends "bootstrap/base.html" %} 
+{% block title %}Mudpit{% endblock %}
+{% block content %}
+<meta http-equiv="refresh" content="120">
+<div class="jumbotron text-center">
+  <h1>Mudpit Dashboard</h1>
+</div>
+<div class="table-responsive">
+  <table class="table">
+	  <tbody><tr>
+		  <th style="width:50%">Network Connection Diagram</th>
+        	  <th style="width:50%">Most Common Alert Messages</th>
+	  </tr>
+	  <tr>
+		  <td>{% include 'network.html' %}</td>
+		  <td>{% include 'message_table.html' %}</td>
+	  </tr>
+  </tbody></table>
+</div>
+<div class="table-responsive">
+  <table class="table">
+	  <tbody><tr>
+		  <th style="width:50%">Most Used Source Port</th>
+        	  <th style="width:50%">Most Used Destination Port</th>
+	  </tr>
+	  <tr>
+		<td>{% include 'source_table.html' %}</td>
+		<td>{% include 'dest_table.html' %}</td>
+	  </tr>
+  </tbody></table>
+</div>
+<div class="table-responsive">
+  <table class="table">
+	  <tbody><tr>
+		  <th style="width:50%">Alert Priority Distribution</th>
+        	  <th style="width:50%">Traffic by Country</th>
+	  </tr>
+	  <tr>
+		<td>{% include 'priority.html' %}</td>
+		<td>{% include 'geoIP_bar.html' %}</td>
+	  </tr>
+  </tbody></table>
+</div>
+{%- endblock %}
+</body></html>
