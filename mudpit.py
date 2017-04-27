@@ -19,9 +19,7 @@ def init():
         """
         parser.parse_everything()
         graphs.visualize()
-        #f = open("_reload.py", "a")
-        #f.write("1")
-        #f.close()
+
         return render_template('index.html')
 
     @app.after_request
@@ -30,5 +28,6 @@ def init():
             f.write("1")
         return response
     return app
+
 if __name__ == "__main__":
     init().run(debug=True, extra_files=['_reload.py'])
