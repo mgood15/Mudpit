@@ -43,3 +43,8 @@ Flask was used for the application. Flask documentation can be found [here.](htt
 I also use a Python library called Geocoder to allow country lookup according to IP address. Documentation can be found [here.](http://geocoder.readthedocs.io/index.html)
 
 Plotly (a powerful visual graphing tool with Python support) is also used for visuals. Information about Plotly can be found [here.](https://plot.ly/)
+
+
+## Contact ##
+Meghan Good
+meghan@csh.rit.edu
